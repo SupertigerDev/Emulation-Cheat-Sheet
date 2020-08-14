@@ -4,6 +4,7 @@ I'm really new to emulating so I am creating a cheetsheat to help me and others 
 # Index
 1. [Significant Bit](#significant-bit)
     * [Examples](#examples)
+    * [Code](#code)
 2. [Bitwize Operators](#bitwize-operators)
     * [Shifting](#shifting)
     
@@ -19,6 +20,22 @@ MSB: 10000000
      ^
 MSB is 1
 ```
+## Code
+This is how you would get the MSB and LSB in Javascript. This should apply in most programming languages as well.
+```js
+// LSB of 0xf2 (11110010)
+//                     ^
+0xf2 & 1
+// Result: 0
+
+// MSB of 0xf2 (11110010)
+//             ^
+0xf2 & 0x80 ? 1 : 0
+// Result: 1
+```
+**Notice**: I dont know if this is the proper way to get the MSB but I think it works :)
+
+
 
 # Bitwize Operators
 ## Shifting
