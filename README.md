@@ -29,7 +29,7 @@ This is how you would get the MSB and LSB in Javascript. This should apply in mo
 // Result: 0
 
 // MSB of 0xf2 (11110010)
-//             ^
+//              ^
 0xf2 & 0x80 ? 1 : 0
 // Result: 1
 ```
